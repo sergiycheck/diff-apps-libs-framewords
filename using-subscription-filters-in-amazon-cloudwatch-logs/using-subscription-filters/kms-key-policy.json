@@ -1,0 +1,76 @@
+{
+  "Version": "2012-10-17",
+  "Id": "key-consolepolicy-3",
+  "Statement": [
+    {
+      "Sid": "Enable IAM User Permissions",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::581425740433:root",
+          "arn:aws:iam::581425740433:user/Administrator"
+        ]
+      },
+      "Action": "kms:*",
+      "Resource": "arn:aws:s3:::aws-cloudtrail-logs-581425740433-7a427cb9"
+    },
+    {
+      "Sid": "Allow CloudTrail to encrypt logs",
+      "Effect": "Allow",
+      "Principal": { "Service": ["cloudtrail.amazonaws.com"] },
+      "Action": "kms:GenerateDataKey*",
+      "Resource": "arn:aws:kms:eu-west-3:581425740433:key/key-for-cloudTrail",
+      "Condition": {
+        "StringLike": {
+          "kms:EncryptionContext:aws:cloudtrail:arn": "arn:aws:cloudtrail:*:581425740433:trail/*"
+        }
+      }
+    },
+    {
+      "Sid": "Allow CloudTrail to describe key",
+      "Effect": "Allow",
+      "Principal": { "Service": ["cloudtrail.amazonaws.com"] },
+      "Action": "kms:DescribeKey",
+      "Resource": "arn:aws:kms:eu-west-3:581425740433:key/key-for-cloudTrail"
+    },
+    {
+      "Sid": "Allow principals in the account to decrypt log files",
+      "Effect": "Allow",
+      "Principal": { "AWS": "*" },
+      "Action": ["kms:Decrypt", "kms:ReEncryptFrom"],
+      "Resource": "arn:aws:kms:eu-west-3:581425740433:key/key-for-cloudTrail",
+      "Condition": {
+        "StringEquals": { "kms:CallerAccount": "581425740433" },
+        "StringLike": {
+          "kms:EncryptionContext:aws:cloudtrail:arn": "arn:aws:cloudtrail:*:581425740433:trail/*"
+        }
+      }
+    },
+    {
+      "Sid": "Allow alias creation during setup",
+      "Effect": "Allow",
+      "Principal": { "AWS": "*" },
+      "Action": "kms:CreateAlias",
+      "Resource": "arn:aws:kms:eu-west-3:581425740433:key/key-for-cloudTrail",
+      "Condition": {
+        "StringEquals": {
+          "kms:ViaService": "ec2.eu-west-3.amazonaws.com",
+          "kms:CallerAccount": "581425740433"
+        }
+      }
+    },
+    {
+      "Sid": "Enable cross account log decryption",
+      "Effect": "Allow",
+      "Principal": { "AWS": "*" },
+      "Action": ["kms:Decrypt", "kms:ReEncryptFrom"],
+      "Resource": "arn:aws:kms:eu-west-3:581425740433:key/key-for-cloudTrail",
+      "Condition": {
+        "StringEquals": { "kms:CallerAccount": "581425740433" },
+        "StringLike": {
+          "kms:EncryptionContext:aws:cloudtrail:arn": "arn:aws:cloudtrail:*:581425740433:trail/*"
+        }
+      }
+    }
+  ]
+}

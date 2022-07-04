@@ -1,0 +1,9 @@
+{
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "kinesis:PutRecord",
+      "Resource": "arn:aws:kinesis:eu-west-3:581425740433:stream/RootAccess"
+    }
+  ]
+}
