@@ -1,0 +1,21 @@
+org: sergiycheck
+console: true
+service: aws-cloudWatch-ec2-log-lambda
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  deploymentMethod: direct
+  stage: dev
+  region: eu-central-1
+  runtime: nodejs16.x
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - httpApi:
+          path: /
+          method: get
+plugins:
+  - serverless-offline

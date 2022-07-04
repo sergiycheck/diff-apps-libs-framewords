@@ -1,0 +1,18 @@
+service: aws-express-http-gateway
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  deploymentMethod: direct
+  stage: dev
+  region: eu-central-1
+  runtime: nodejs16.x
+
+functions:
+  api:
+    handler: handler.handler
+    events:
+      - httpApi: "*"
+
+plugins:
+  - serverless-offline
