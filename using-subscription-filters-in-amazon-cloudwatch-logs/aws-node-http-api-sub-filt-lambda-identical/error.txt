@@ -1,0 +1,5 @@
+2022-07-05T15:08:17.221Z	b6692e3c-5f2a-44ea-b354-4fddbffc25bd	INFO	error occured Error: incorrect header check
+    at Zlib.zlibOnError [as onerror] (zlib.js:187:17) {
+  errno: -3,
+  code: 'Z_DATA_ERROR'
+}

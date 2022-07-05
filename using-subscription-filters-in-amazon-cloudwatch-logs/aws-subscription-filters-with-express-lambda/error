@@ -1,0 +1,7 @@
+ANY /unzip (λ: api)
+Error: incorrect header check
+    at Zlib.zlibOnError [as onerror] (node:zlib:189:17)
+    at Zlib.callbackTrampoline (node:internal/async_hooks:130:17) {
+  errno: -3,
+  code: 'Z_DATA_ERROR'
+}

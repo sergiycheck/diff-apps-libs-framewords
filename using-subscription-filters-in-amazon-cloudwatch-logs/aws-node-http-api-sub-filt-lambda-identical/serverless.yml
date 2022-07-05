@@ -1,0 +1,19 @@
+service: sub-filt-lambda-identical
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  deploymentMethod: direct
+  stage: dev
+  region: eu-central-1
+  runtime: nodejs14.x
+
+functions:
+  hello:
+    handler: handler.handler
+    events:
+      - httpApi:
+          path: /
+          method: post
+plugins:
+  - serverless-offline

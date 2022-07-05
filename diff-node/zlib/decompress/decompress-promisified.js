@@ -9,17 +9,19 @@ const dest = "output.txt";
 
 const buffer = Buffer.from(readFileSync(inputGz, "base64"), "base64");
 
-do_unzip(buffer)
-  .then(async (buf) => {
+async function startUnzip() {
+  try {
+    const buf = await do_unzip(buffer);
     const result = buf.toString();
     console.log(`result:\n`, result);
     writeFile(dest, Buffer.from(result), (err) => {
       if (err) throw err;
       console.log("The file has been saved!");
     });
-    return result;
-  })
-  .catch((err) => {
+  } catch (err) {
     console.error("An error occurred:", err);
     process.exitCode = 1;
-  });
+  }
+}
+
+startUnzip();
