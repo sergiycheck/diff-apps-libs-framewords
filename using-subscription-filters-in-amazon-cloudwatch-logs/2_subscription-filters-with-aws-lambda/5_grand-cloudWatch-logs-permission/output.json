@@ -1,0 +1,3 @@
+{
+  "Statement": "{\"Sid\":\"sub-filt-lambda-identical-dev-hello-another\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"logs.eu-central-1.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:eu-central-1:581425740433:function:sub-filt-lambda-identical-dev-hello\",\"Condition\":{\"StringEquals\":{\"AWS:SourceAccount\":\"581425740433\"},\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:logs:eu-central-1:581425740433:log-group:/aws/lambda/sub-filt-lambda-identical-dev-hello/another:*\"}}}"
+}
