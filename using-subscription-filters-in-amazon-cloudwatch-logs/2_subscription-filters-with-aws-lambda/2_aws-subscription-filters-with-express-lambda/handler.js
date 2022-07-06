@@ -34,9 +34,7 @@ app.post("/unzip", checkHeadersMiddleware, async (req, res, next) => {
   req.addListener("end", async () => {
     const buff = Buffer.concat(data);
     try {
-      const buffRes = await do_unzip(buff, {
-        finishFlush: zlib.constants.Z_SYNC_FLUSH,
-      });
+      const buffRes = await do_unzip(buff);
       const result = buffRes.toString();
 
       return res.status(200).json({
@@ -54,6 +52,21 @@ app.post("/unzip-stream", checkHeadersMiddleware, async (req, res, next) => {
   } catch (error) {
     next(error);
   }
+});
+
+app.post("/unzip-text-content", async (req, res, next) => {
+  const gzipContent = req.body.data;
+  try {
+    const result = await do_unzip(gzipContent);
+    return res.status(200).json({ result });
+  } catch (error) {
+    next(error);
+  }
+
+  // zlib.gunzip(gzipContent, function (error, result) {
+  //   if (error) return next(error);
+  //   return res.status(200).json({ result });
+  // });
 });
 
 app.get("/package.json", (req, res, next) => {
