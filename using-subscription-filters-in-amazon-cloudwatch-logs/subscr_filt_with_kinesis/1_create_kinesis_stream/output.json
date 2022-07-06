@@ -1,4 +1,3 @@
-$aws kinesis describe-stream --stream-name "RootAccess"
 {
     "StreamDescription": {
         "Shards": [
@@ -9,11 +8,11 @@ $aws kinesis describe-stream --stream-name "RootAccess"
                     "EndingHashKey": "340282366920938463463374607431768211455"
                 },
                 "SequenceNumberRange": {
-                    "StartingSequenceNumber": "49631074104908873918843413187044957429932978440704622594"
+                    "StartingSequenceNumber": "49631127165339533725137421320677872161461509025207156738"
                 }
             }
         ],
-        "StreamARN": "arn:aws:kinesis:eu-west-3:581425740433:stream/RootAccess",
+        "StreamARN": "arn:aws:kinesis:eu-north-1:581425740433:stream/RootAccess",
         "StreamName": "RootAccess",
         "StreamStatus": "ACTIVE",
         "RetentionPeriodHours": 24,
@@ -24,6 +23,6 @@ $aws kinesis describe-stream --stream-name "RootAccess"
         ],
         "EncryptionType": "NONE",
         "KeyId": null,
-        "StreamCreationTimestamp": "2022-07-04T16:46:23+03:00"
+        "StreamCreationTimestamp": "2022-07-06T10:04:50+03:00"
     }
 }

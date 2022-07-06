@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# create kinesis stream
+# exec aws kinesis create-stream \
+# --stream-name "RootAccess" --shard-count 1 \
+# --region eu-north-1
+
+#describe stream
+aws kinesis describe-stream --stream-name "RootAccess" --region eu-north-1
+
