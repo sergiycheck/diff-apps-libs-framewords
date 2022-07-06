@@ -3,7 +3,7 @@ const zlib = require('zlib');
 
 module.exports.handler = async (input, context) => {
   console.log('input', input);
-  const payload = Buffer.from(JSON.stringify(input.awslogs.data), 'base64');
+  const payload = Buffer.from(input.awslogs.data, 'base64');
   zlib.gunzip(payload, function (error, result) {
     if (error) {
       console.error('an error occurred ', error);

@@ -1,7 +1,7 @@
 {
   "awslogs": {
     "data": {
-      "message": "message data 1"
+      "message": "this data should be text content of the compressed file with gz extension"
     }
   }
 }
