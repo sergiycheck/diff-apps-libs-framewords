@@ -1,0 +1,14 @@
+{
+  "messageType": "CONTROL_MESSAGE",
+  "owner": "CloudwatchLogs",
+  "logGroup": "",
+  "logStream": "",
+  "subscriptionFilters": [],
+  "logEvents": [
+    {
+      "id": "",
+      "timestamp": 1657174133415,
+      "message": "CWL CONTROL MESSAGE: Checking health of destination Kinesis stream."
+    }
+  ]
+}

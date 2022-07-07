@@ -1,23 +1,23 @@
 {
-    "Role": {
-        "Path": "/",
-        "RoleName": "CWLtoKinesisRole",
-        "RoleId": "AROAYOX5MXKI6VXTX4K5W",
-        "Arn": "arn:aws:iam::581425740433:role/CWLtoKinesisRole",
-        "CreateDate": "2022-07-06T07:08:02+00:00",
-        "AssumeRolePolicyDocument": {
-            "Statement": {
-                "Effect": "Allow",
-                "Principal": {
-                    "Service": "logs.eu-north-1.amazonaws.com"
-                },
-                "Action": "sts:AssumeRole",
-                "Condition": {
-                    "StringLike": {
-                        "aws:SourceArn": "arn:aws:logs:eu-north-1:581425740433:*"
-                    }
-                }
-            }
+  "Role": {
+    "Path": "/",
+    "RoleName": "CWLtoKinesisRole",
+    "RoleId": "AROAYOX5MXKIWAMX4BSJH",
+    "Arn": "arn:aws:iam::581425740433:role/CWLtoKinesisRole",
+    "CreateDate": "2022-07-07T06:04:17+00:00",
+    "AssumeRolePolicyDocument": {
+      "Statement": {
+        "Effect": "Allow",
+        "Principal": {
+          "Service": "logs.eu-central-1.amazonaws.com"
+        },
+        "Action": "sts:AssumeRole",
+        "Condition": {
+          "StringLike": {
+            "aws:SourceArn": "arn:aws:logs:eu-central-1:581425740433:*"
+          }
         }
+      }
     }
+  }
 }

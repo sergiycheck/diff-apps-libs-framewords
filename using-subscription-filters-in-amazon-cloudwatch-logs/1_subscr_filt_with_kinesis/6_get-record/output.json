@@ -1,0 +1,16 @@
+{
+  "Records": [
+    {
+      "SequenceNumber": "49631156628727278100620225947407909269578907638906748930",
+      "ApproximateArrivalTimestamp": "2022-07-07T09:08:53.489000+03:00",
+      "Data": "H4sIAAAAAAAAADXOTwuCQBCH4a+yzFkC6Y+wtwjrkCVk0CEiNp10SHdlZywi+u5h1vFlfjDPCxpkNiXuny2ChkW63e/S5LyJs2y+iiEA97Do+0vtuuJhJK8SVzIEULty5V3XgoahMvFomiG5u3DuqRVydkm1oGfQx9N3F9/RSp8voGKYCzXIYpoWdDibRmE0CcfjSTgN/rwecEjUj6d+PK0WFeY3sqWq0NRSKXdVBbKQNf1ntSaLTKz4SxvB+/T+AGhHfLXyAAAA",
+      "PartitionKey": "3e21f5e8240cbb048271af4fdb892a1c"
+    },
+    {
+      "SequenceNumber": "49631156628727278100620225947409118195398523298873606146",
+      "ApproximateArrivalTimestamp": "2022-07-07T09:09:07.813000+03:00",
+      "Data": "H4sIAAAAAAAAADXOQQuCQBCG4b+yzFkCoRL2FmEdsoQUOkTEppMO6a7sjEVE/z3MOr7MB/O8oEVmU2H+7BA0LNNdvk+T8zbOssU6hgDcw6IfLo3ry4eRok5cxRBA46q1d30HGsbKxKNpx+T+woWnTsjZFTWCnkEfT99dfEcrQ76AynEu1CKLaTvQ4XwWhdE0nEbRfBb8eQPgkKgfT/14Wi1rLG5kK1WjaaRW7qpKZCFrhs9qQxaZWPGXNoH36f0BDQUYVfIAAAA=",
+      "PartitionKey": "3e21f5e8240cbb048271af4fdb892a1c"
+    }
+  ]
+}

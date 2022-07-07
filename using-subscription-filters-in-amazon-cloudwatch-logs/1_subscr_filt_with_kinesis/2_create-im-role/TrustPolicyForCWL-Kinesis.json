@@ -1,11 +1,11 @@
 {
   "Statement": {
     "Effect": "Allow",
-    "Principal": { "Service": "logs.eu-north-1.amazonaws.com" },
+    "Principal": { "Service": "logs.eu-central-1.amazonaws.com" },
     "Action": "sts:AssumeRole",
     "Condition": {
       "StringLike": {
-        "aws:SourceArn": "arn:aws:logs:eu-north-1:581425740433:*"
+        "aws:SourceArn": "arn:aws:logs:eu-central-1:581425740433:*"
       }
     }
   }

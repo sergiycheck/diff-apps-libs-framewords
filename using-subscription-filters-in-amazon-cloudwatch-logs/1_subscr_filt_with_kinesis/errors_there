@@ -1,17 +1,11 @@
-//TODO:
 Sending events to CloudWatch Logs
 https://docs.aws.amazon.com/awscloudtrail/latest/userguide/send-cloudtrail-events-to-cloudwatch-logs.html
 
-TODO:
-ERROR{
-The AWS KMS key policy does not grant CloudTrail sufficient access. Learn more
-https://docs.aws.amazon.com/console/awscloudtrail/S3/KMS/policy
-}
-
-TODO:
 can not put subscription filter because log group doest not exist
 tutorial
 Using CloudWatch Logs subscription filters
 (
 https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html
 )
+
+resolved with adding correct region

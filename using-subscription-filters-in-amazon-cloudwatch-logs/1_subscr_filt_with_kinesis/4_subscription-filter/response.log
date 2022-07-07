@@ -1,0 +1,111 @@
+2022-07-07 09:09:18,654 - MainThread - awscli.clidriver - DEBUG - CLI version: aws-cli/2.7.0 Python/3.9.11 Linux/5.13.0-52-generic exe/x86_64.ubuntu.20
+2022-07-07 09:09:18,654 - MainThread - awscli.clidriver - DEBUG - Arguments entered to CLI: ['logs', 'put-subscription-filter', '--log-group-name', 'log-group-kinesis-subscription-filter', '--filter-name', 'RootAccess', '--filter-pattern', '{$.userIdentity.type = Root}', '--destination-arn', 'arn:aws:kinesis:eu-central-1:581425740433:stream/RootAccess', '--role-arn', 'arn:aws:iam::581425740433:role/CWLtoKinesisRole', '--region', 'eu-central-1', '--debug']
+2022-07-07 09:09:18,662 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function add_s3 at 0x7f69cfca0430>
+2022-07-07 09:09:18,662 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function add_ddb at 0x7f69cfe7b310>
+2022-07-07 09:09:18,662 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <bound method BasicCommand.add_command of <class 'awscli.customizations.configure.configure.ConfigureCommand'>>
+2022-07-07 09:09:18,662 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function change_name at 0x7f69cfea0700>
+2022-07-07 09:09:18,662 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function change_name at 0x7f69cfea7820>
+2022-07-07 09:09:18,662 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function alias_opsworks_cm at 0x7f69cfcb4dc0>
+2022-07-07 09:09:18,662 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function add_history_commands at 0x7f69cfe42e50>
+2022-07-07 09:09:18,662 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <bound method BasicCommand.add_command of <class 'awscli.customizations.devcommands.CLIDevCommand'>>
+2022-07-07 09:09:18,662 - MainThread - botocore.hooks - DEBUG - Event building-command-table.main: calling handler <function add_waiters at 0x7f69cfcb4040>
+2022-07-07 09:09:18,662 - MainThread - botocore.loaders - DEBUG - Loading JSON file: /usr/local/aws-cli/v2/2.7.0/dist/awscli/data/cli.json
+2022-07-07 09:09:18,665 - MainThread - botocore.hooks - DEBUG - Event top-level-args-parsed: calling handler <function resolve_types at 0x7f69cfd74dc0>
+2022-07-07 09:09:18,665 - MainThread - botocore.hooks - DEBUG - Event top-level-args-parsed: calling handler <function no_sign_request at 0x7f69cfd77940>
+2022-07-07 09:09:18,665 - MainThread - botocore.hooks - DEBUG - Event top-level-args-parsed: calling handler <function resolve_verify_ssl at 0x7f69cfd778b0>
+2022-07-07 09:09:18,665 - MainThread - botocore.hooks - DEBUG - Event top-level-args-parsed: calling handler <function resolve_cli_read_timeout at 0x7f69cfd77a60>
+2022-07-07 09:09:18,666 - MainThread - botocore.hooks - DEBUG - Event top-level-args-parsed: calling handler <function resolve_cli_connect_timeout at 0x7f69cfd779d0>
+2022-07-07 09:09:18,666 - MainThread - botocore.hooks - DEBUG - Event top-level-args-parsed: calling handler <built-in method update of dict object at 0x7f69cfc53980>
+2022-07-07 09:09:18,666 - MainThread - botocore.session - DEBUG - Setting config variable for region to 'eu-central-1'
+2022-07-07 09:09:18,666 - MainThread - awscli.clidriver - DEBUG - CLI version: aws-cli/2.7.0 Python/3.9.11 Linux/5.13.0-52-generic exe/x86_64.ubuntu.20 prompt/off
+2022-07-07 09:09:18,666 - MainThread - awscli.clidriver - DEBUG - Arguments entered to CLI: ['logs', 'put-subscription-filter', '--log-group-name', 'log-group-kinesis-subscription-filter', '--filter-name', 'RootAccess', '--filter-pattern', '{$.userIdentity.type = Root}', '--destination-arn', 'arn:aws:kinesis:eu-central-1:581425740433:stream/RootAccess', '--role-arn', 'arn:aws:iam::581425740433:role/CWLtoKinesisRole', '--region', 'eu-central-1', '--debug']
+2022-07-07 09:09:18,666 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function add_timestamp_parser at 0x7f69cfca0a60>
+2022-07-07 09:09:18,667 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function register_uri_param_handler at 0x7f69d06e68b0>
+2022-07-07 09:09:18,667 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function add_binary_formatter at 0x7f69cfc19280>
+2022-07-07 09:09:18,667 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function no_pager_handler at 0x7f69d06e1ca0>
+2022-07-07 09:09:18,667 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function inject_assume_role_provider_cache at 0x7f69d06cb700>
+2022-07-07 09:09:18,668 - MainThread - botocore.utils - DEBUG - IMDS ENDPOINT: http://169.254.169.254/
+2022-07-07 09:09:18,670 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function attach_history_handler at 0x7f69cfe42d30>
+2022-07-07 09:09:18,670 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function inject_json_file_cache at 0x7f69cfe751f0>
+2022-07-07 09:09:18,678 - MainThread - botocore.loaders - DEBUG - Loading JSON file: /usr/local/aws-cli/v2/2.7.0/dist/awscli/botocore/data/logs/2014-03-28/service-2.json
+2022-07-07 09:09:18,686 - MainThread - botocore.hooks - DEBUG - Event building-command-table.logs: calling handler <function inject_tail_command at 0x7f69cfcc41f0>
+2022-07-07 09:09:18,686 - MainThread - botocore.hooks - DEBUG - Event building-command-table.logs: calling handler <function add_waiters at 0x7f69cfcb4040>
+2022-07-07 09:09:18,694 - MainThread - awscli.clidriver - DEBUG - OrderedDict([('log-group-name', <awscli.arguments.CLIArgument object at 0x7f69cf2b28b0>), ('filter-name', <awscli.arguments.CLIArgument object at 0x7f69cf2b2880>), ('filter-pattern', <awscli.arguments.CLIArgument object at 0x7f69cf2b2820>), ('destination-arn', <awscli.arguments.CLIArgument object at 0x7f69cf2b27f0>), ('role-arn', <awscli.arguments.CLIArgument object at 0x7f69cf2b27c0>), ('distribution', <awscli.arguments.CLIArgument object at 0x7f69cf2b29d0>)])
+2022-07-07 09:09:18,694 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.logs.put-subscription-filter: calling handler <function add_streaming_output_arg at 0x7f69cfca0d30>
+2022-07-07 09:09:18,694 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.logs.put-subscription-filter: calling handler <function add_cli_input_json at 0x7f69d06cbee0>
+2022-07-07 09:09:18,694 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.logs.put-subscription-filter: calling handler <function add_cli_input_yaml at 0x7f69d06d7160>
+2022-07-07 09:09:18,694 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.logs.put-subscription-filter: calling handler <function unify_paging_params at 0x7f69cfe7b820>
+2022-07-07 09:09:18,702 - MainThread - botocore.loaders - DEBUG - Loading JSON file: /usr/local/aws-cli/v2/2.7.0/dist/awscli/botocore/data/logs/2014-03-28/paginators-1.json
+2022-07-07 09:09:18,702 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.logs.put-subscription-filter: calling handler <function add_generate_skeleton at 0x7f69cfd743a0>
+2022-07-07 09:09:18,702 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.logs.put-subscription-filter: calling handler <bound method OverrideRequiredArgsArgument.override_required_args of <awscli.customizations.cliinput.CliInputJSONArgument object at 0x7f69cf2b2a30>>
+2022-07-07 09:09:18,702 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.logs.put-subscription-filter: calling handler <bound method OverrideRequiredArgsArgument.override_required_args of <awscli.customizations.cliinput.CliInputYAMLArgument object at 0x7f69cf2b2ac0>>
+2022-07-07 09:09:18,703 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.logs.put-subscription-filter: calling handler <bound method GenerateCliSkeletonArgument.override_required_args of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x7f69cf2b2b50>>
+2022-07-07 09:09:18,704 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.logs.put-subscription-filter.log-group-name: calling handler <awscli.paramfile.URIArgumentHandler object at 0x7f69cf3a4340>
+2022-07-07 09:09:18,704 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.logs.put-subscription-filter: calling handler <awscli.argprocess.ParamShorthandParser object at 0x7f69d070f070>
+2022-07-07 09:09:18,704 - MainThread - awscli.arguments - DEBUG - Unpacked value of 'log-group-kinesis-subscription-filter' for parameter "log_group_name": 'log-group-kinesis-subscription-filter'
+2022-07-07 09:09:18,704 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.logs.put-subscription-filter.filter-name: calling handler <awscli.paramfile.URIArgumentHandler object at 0x7f69cf3a4340>
+2022-07-07 09:09:18,704 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.logs.put-subscription-filter: calling handler <awscli.argprocess.ParamShorthandParser object at 0x7f69d070f070>
+2022-07-07 09:09:18,704 - MainThread - awscli.arguments - DEBUG - Unpacked value of 'RootAccess' for parameter "filter_name": 'RootAccess'
+2022-07-07 09:09:18,704 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.logs.put-subscription-filter.filter-pattern: calling handler <awscli.paramfile.URIArgumentHandler object at 0x7f69cf3a4340>
+2022-07-07 09:09:18,704 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.logs.put-subscription-filter: calling handler <awscli.argprocess.ParamShorthandParser object at 0x7f69d070f070>
+2022-07-07 09:09:18,704 - MainThread - awscli.argprocess - DEBUG - Param filter_pattern looks like JSON, not considered for param shorthand.
+2022-07-07 09:09:18,704 - MainThread - awscli.arguments - DEBUG - Unpacked value of '{$.userIdentity.type = Root}' for parameter "filter_pattern": '{$.userIdentity.type = Root}'
+2022-07-07 09:09:18,704 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.logs.put-subscription-filter.destination-arn: calling handler <awscli.paramfile.URIArgumentHandler object at 0x7f69cf3a4340>
+2022-07-07 09:09:18,704 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.logs.put-subscription-filter: calling handler <awscli.argprocess.ParamShorthandParser object at 0x7f69d070f070>
+2022-07-07 09:09:18,704 - MainThread - awscli.arguments - DEBUG - Unpacked value of 'arn:aws:kinesis:eu-central-1:581425740433:stream/RootAccess' for parameter "destination_arn": 'arn:aws:kinesis:eu-central-1:581425740433:stream/RootAccess'
+2022-07-07 09:09:18,704 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.logs.put-subscription-filter.role-arn: calling handler <awscli.paramfile.URIArgumentHandler object at 0x7f69cf3a4340>
+2022-07-07 09:09:18,704 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.logs.put-subscription-filter: calling handler <awscli.argprocess.ParamShorthandParser object at 0x7f69d070f070>
+2022-07-07 09:09:18,705 - MainThread - awscli.arguments - DEBUG - Unpacked value of 'arn:aws:iam::581425740433:role/CWLtoKinesisRole' for parameter "role_arn": 'arn:aws:iam::581425740433:role/CWLtoKinesisRole'
+2022-07-07 09:09:18,705 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.logs.put-subscription-filter.distribution: calling handler <awscli.paramfile.URIArgumentHandler object at 0x7f69cf3a4340>
+2022-07-07 09:09:18,705 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.logs.put-subscription-filter.cli-input-json: calling handler <awscli.paramfile.URIArgumentHandler object at 0x7f69cf3a4340>
+2022-07-07 09:09:18,705 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.logs.put-subscription-filter.cli-input-yaml: calling handler <awscli.paramfile.URIArgumentHandler object at 0x7f69cf3a4340>
+2022-07-07 09:09:18,705 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.logs.put-subscription-filter.generate-cli-skeleton: calling handler <awscli.paramfile.URIArgumentHandler object at 0x7f69cf3a4340>
+2022-07-07 09:09:18,705 - MainThread - botocore.hooks - DEBUG - Event calling-command.logs.put-subscription-filter: calling handler <bound method CliInputArgument.add_to_call_parameters of <awscli.customizations.cliinput.CliInputJSONArgument object at 0x7f69cf2b2a30>>
+2022-07-07 09:09:18,705 - MainThread - botocore.hooks - DEBUG - Event calling-command.logs.put-subscription-filter: calling handler <bound method CliInputArgument.add_to_call_parameters of <awscli.customizations.cliinput.CliInputYAMLArgument object at 0x7f69cf2b2ac0>>
+2022-07-07 09:09:18,705 - MainThread - botocore.hooks - DEBUG - Event calling-command.logs.put-subscription-filter: calling handler <bound method GenerateCliSkeletonArgument.generate_skeleton of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x7f69cf2b2b50>>
+2022-07-07 09:09:18,705 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: env
+2022-07-07 09:09:18,705 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: assume-role
+2022-07-07 09:09:18,705 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: assume-role-with-web-identity
+2022-07-07 09:09:18,705 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: sso
+2022-07-07 09:09:18,705 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: shared-credentials-file
+2022-07-07 09:09:18,706 - MainThread - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2022-07-07 09:09:18,706 - MainThread - botocore.loaders - DEBUG - Loading JSON file: /usr/local/aws-cli/v2/2.7.0/dist/awscli/botocore/data/endpoints.json
+2022-07-07 09:09:18,717 - MainThread - botocore.hooks - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f69d22890d0>
+2022-07-07 09:09:18,719 - MainThread - botocore.hooks - DEBUG - Event creating-client-class.cloudwatch-logs: calling handler <function add_generate_presigned_url at 0x7f69d23098b0>
+2022-07-07 09:09:18,725 - MainThread - botocore.endpoint - DEBUG - Setting logs timeout as (60, 60)
+2022-07-07 09:09:18,725 - MainThread - botocore.hooks - DEBUG - Event provide-client-params.cloudwatch-logs.PutSubscriptionFilter: calling handler <function base64_decode_input_blobs at 0x7f69cfc199d0>
+2022-07-07 09:09:18,726 - MainThread - botocore.hooks - DEBUG - Event before-parameter-build.cloudwatch-logs.PutSubscriptionFilter: calling handler <function generate_idempotent_uuid at 0x7f69d22a20d0>
+2022-07-07 09:09:18,726 - MainThread - botocore.hooks - DEBUG - Event before-call.cloudwatch-logs.PutSubscriptionFilter: calling handler <function inject_api_version_header_if_needed at 0x7f69d22a3940>
+2022-07-07 09:09:18,726 - MainThread - botocore.endpoint - DEBUG - Making request for OperationModel(name=PutSubscriptionFilter) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'Logs_20140328.PutSubscriptionFilter', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'aws-cli/2.7.0 Python/3.9.11 Linux/5.13.0-52-generic exe/x86_64.ubuntu.20 prompt/off command/logs.put-subscription-filter'}, 'body': b'{"logGroupName": "log-group-kinesis-subscription-filter", "filterName": "RootAccess", "filterPattern": "{$.userIdentity.type = Root}", "destinationArn": "arn:aws:kinesis:eu-central-1:581425740433:stream/RootAccess", "roleArn": "arn:aws:iam::581425740433:role/CWLtoKinesisRole"}', 'url': 'https://logs.eu-central-1.amazonaws.com/', 'context': {'client_region': 'eu-central-1', 'client_config': <botocore.config.Config object at 0x7f69ceeb9340>, 'has_streaming_input': False, 'auth_type': None}}
+2022-07-07 09:09:18,726 - MainThread - botocore.hooks - DEBUG - Event request-created.cloudwatch-logs.PutSubscriptionFilter: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f69ceeb9400>>
+2022-07-07 09:09:18,726 - MainThread - botocore.hooks - DEBUG - Event choose-signer.cloudwatch-logs.PutSubscriptionFilter: calling handler <function set_operation_specific_signer at 0x7f69d229ff70>
+2022-07-07 09:09:18,726 - MainThread - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2022-07-07 09:09:18,726 - MainThread - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:logs.eu-central-1.amazonaws.com
+x-amz-date:20220707T060918Z
+x-amz-target:Logs_20140328.PutSubscriptionFilter
+
+content-type;host;x-amz-date;x-amz-target
+ceab1fceeec4796fc23df63d92c593cf866717dee520e463e13d42662a55e9aa
+2022-07-07 09:09:18,726 - MainThread - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20220707T060918Z
+20220707/eu-central-1/logs/aws4_request
+8d0453994b5de472305833756f82df62f6377b6bcf826289831f720071d11855
+2022-07-07 09:09:18,727 - MainThread - botocore.auth - DEBUG - Signature:
+899da5c2ad67a1b327d7887558fccec26b0d0aa5fe8db30913597f16c88e12ed
+2022-07-07 09:09:18,727 - MainThread - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://logs.eu-central-1.amazonaws.com/, headers={'X-Amz-Target': b'Logs_20140328.PutSubscriptionFilter', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'aws-cli/2.7.0 Python/3.9.11 Linux/5.13.0-52-generic exe/x86_64.ubuntu.20 prompt/off command/logs.put-subscription-filter', 'X-Amz-Date': b'20220707T060918Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=aws_access_key_id/20220707/eu-central-1/logs/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=899da5c2ad67a1b327d7887558fccec26b0d0aa5fe8db30913597f16c88e12ed', 'Content-Length': '277'}>
+2022-07-07 09:09:18,727 - MainThread - botocore.httpsession - DEBUG - Certificate path: /usr/local/aws-cli/v2/2.7.0/dist/awscli/botocore/cacert.pem
+2022-07-07 09:09:18,728 - MainThread - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): logs.eu-central-1.amazonaws.com:443
+2022-07-07 09:09:19,201 - MainThread - urllib3.connectionpool - DEBUG - https://logs.eu-central-1.amazonaws.com:443 "POST / HTTP/1.1" 200 0
+2022-07-07 09:09:19,202 - MainThread - botocore.parsers - DEBUG - Response headers: {'x-amzn-RequestId': '0976cef1-2d74-474e-8c04-2f08178eee38', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '0', 'Date': 'Thu, 07 Jul 2022 06:09:18 GMT'}
+2022-07-07 09:09:19,202 - MainThread - botocore.parsers - DEBUG - Response body:
+b''
+2022-07-07 09:09:19,202 - MainThread - botocore.hooks - DEBUG - Event needs-retry.cloudwatch-logs.PutSubscriptionFilter: calling handler <bound method RetryHandler.needs_retry of <botocore.retries.standard.RetryHandler object at 0x7f69ceeb9e80>>
+2022-07-07 09:09:19,203 - MainThread - botocore.retries.standard - DEBUG - Not retrying request.
+2022-07-07 09:09:19,203 - MainThread - botocore.hooks - DEBUG - Event after-call.cloudwatch-logs.PutSubscriptionFilter: calling handler <bound method RetryQuotaChecker.release_retry_quota of <botocore.retries.standard.RetryQuotaChecker object at 0x7f69ceeb9970>>
+2022-07-07 09:09:19,203 - MainThread - awscli.formatter - DEBUG - RequestId: 0976cef1-2d74-474e-8c04-2f08178eee38

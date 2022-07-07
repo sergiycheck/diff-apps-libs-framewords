@@ -1,28 +1,28 @@
 {
-    "StreamDescription": {
-        "Shards": [
-            {
-                "ShardId": "shardId-000000000000",
-                "HashKeyRange": {
-                    "StartingHashKey": "0",
-                    "EndingHashKey": "340282366920938463463374607431768211455"
-                },
-                "SequenceNumberRange": {
-                    "StartingSequenceNumber": "49631127165339533725137421320677872161461509025207156738"
-                }
-            }
-        ],
-        "StreamARN": "arn:aws:kinesis:eu-north-1:581425740433:stream/RootAccess",
-        "StreamName": "RootAccess",
-        "StreamStatus": "ACTIVE",
-        "RetentionPeriodHours": 24,
-        "EnhancedMonitoring": [
-            {
-                "ShardLevelMetrics": []
-            }
-        ],
-        "EncryptionType": "NONE",
-        "KeyId": null,
-        "StreamCreationTimestamp": "2022-07-06T10:04:50+03:00"
-    }
+  "StreamDescription": {
+    "Shards": [
+      {
+        "ShardId": "shardId-000000000000",
+        "HashKeyRange": {
+          "StartingHashKey": "0",
+          "EndingHashKey": "340282366920938463463374607431768211455"
+        },
+        "SequenceNumberRange": {
+          "StartingSequenceNumber": "49631156628727278100620225947404282492120031384509087746"
+        }
+      }
+    ],
+    "StreamARN": "arn:aws:kinesis:eu-central-1:581425740433:stream/RootAccess",
+    "StreamName": "RootAccess",
+    "StreamStatus": "ACTIVE",
+    "RetentionPeriodHours": 24,
+    "EnhancedMonitoring": [
+      {
+        "ShardLevelMetrics": []
+      }
+    ],
+    "EncryptionType": "NONE",
+    "KeyId": null,
+    "StreamCreationTimestamp": "2022-07-07T09:01:04+03:00"
+  }
 }

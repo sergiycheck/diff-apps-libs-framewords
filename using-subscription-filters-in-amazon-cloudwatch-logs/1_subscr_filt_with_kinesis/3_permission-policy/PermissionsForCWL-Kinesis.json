@@ -3,7 +3,7 @@
     {
       "Effect": "Allow",
       "Action": "kinesis:PutRecord",
-      "Resource": "arn:aws:kinesis:eu-north-1:581425740433:stream/RootAccess"
+      "Resource": "arn:aws:kinesis:eu-central-1:581425740433:stream/RootAccess"
     }
   ]
 }
