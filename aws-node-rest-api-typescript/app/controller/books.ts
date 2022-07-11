@@ -55,6 +55,7 @@ class BooksController extends BooksService {
 
   async findOne(event: APIGatewayEvent, context: Context) {
     // The amount of memory allocated for the function
+
     console.log('memoryLimitInMB: ', context.memoryLimitInMB);
 
     const id = Number(event.pathParameters.id);

@@ -1,9 +1,9 @@
 import lambdaTester from 'lambda-tester';
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { findOne, find, create, update, deleteOne } from '../app/handler';
+import { findOne, find, create, update, deleteOne } from '../../app/handler';
 import * as booksMock from './books.mock';
-import { Books as BooksModel } from '../app/model/books';
+import { Books as BooksModel } from '../../app/model/books';
 
 describe('FindOne [GET]', () => {
   it('success', () => {
@@ -12,8 +12,12 @@ describe('FindOne [GET]', () => {
 
       s.expects('findOne').atLeast(1).atMost(3).resolves(booksMock.findOne);
 
+      const event = {
+        pathParameters: { id: '25768396' },
+      };
+
       return lambdaTester(findOne)
-        .event({ pathParameters: { id: 25768396 } })
+        .event(event)
         .expectResult((result: any) => {
           expect(result.statusCode).to.equal(200);
           const body = JSON.parse(result.body);
