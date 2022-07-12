@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-const { getResponse, getLocalGreeting, pickLocale } = require("./utils");
+const { getResponse, getLocalGreeting, pickLocale } = require('./utils');
 
 module.exports.getCurrTime = (event, context, callback) => {
   const responseBody = {
