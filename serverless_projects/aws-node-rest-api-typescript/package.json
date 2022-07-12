@@ -9,7 +9,8 @@
     "deploy": "serverless deploy",
     "test": "cross-env NODE_ENV=dev mocha -r ts-node/register sinon-tests/**/*.test.ts --exit",
     "coverage": "nyc --reporter lcov npm run test",
-    "test:jest": "jest"
+    "test-jest-envs": "export JEST_JUNIT_OUTPUT_DIR=test-results/jest && export JEST_JUNIT_OUTPUT_FILE=test-results/jest/junit.xml&& jest",
+    "test:jest": "export jest"
   },
   "pre-commit": [
     "lint"
@@ -38,6 +39,7 @@
     "eslint-plugin-import": "^2.26.0",
     "istanbul": "^0.4.5",
     "jest": "^28.1.2",
+    "jest-junit": "^14.0.0",
     "lambda-tester": "^4.0.1",
     "mocha": "^7.1.2",
     "nyc": "^15.0.1",

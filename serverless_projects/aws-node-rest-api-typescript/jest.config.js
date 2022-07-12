@@ -3,4 +3,5 @@ module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   rootDir: './__tests__',
+  reporters: ['default', 'jest-junit'],
 };

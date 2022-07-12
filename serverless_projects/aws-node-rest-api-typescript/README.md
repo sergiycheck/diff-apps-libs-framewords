@@ -1,26 +1,14 @@
-<!--
-title: 'Serverless Nodejs Rest API with TypeScript And MongoDB Atlas'
-description: 'This is simple REST API example for AWS Lambda By Serverless framwork with TypeScript and MongoDB Atlas.'
-layout: Doc
-framework: v1
-platform: AWS
-language: nodeJS
-priority: 10
-authorLink: 'https://github.com/Q-Angelo'
-authorName: 'May Jun'
-authorAvatar: 'https://avatars0.githubusercontent.com/u/17956058?s=460&u=f3acebabd097e6e93d5be5a8366b980fea5b15aa&v=4'
--->
 # Serverless Nodejs Rest API with TypeScript And MongoDB Atlas
 
 This is simple REST API example for AWS Lambda By Serverless framwork with TypeScript and MongoDB Atlas.
 
 ## Use Cases
 
-* REST API with typescript
-* MongoDB Atlas data storage
-* Multi-environment management under Serverless
-* Mocha unit tests and lambda-tester interface test
-* AWS lambda function log view
+- REST API with typescript
+- MongoDB Atlas data storage
+- Multi-environment management under Serverless
+- Mocha unit tests and lambda-tester interface test
+- AWS lambda function log view
 
 ## Invoke the function locally
 
@@ -45,8 +33,8 @@ Serverless: Typescript compiled.
 
 ### To Test It Locally
 
-* Run ```npm install``` to install all the necessary dependencies.
-* Run ```npm run local``` use serverless offline to test locally. 
+- Run `npm install` to install all the necessary dependencies.
+- Run `npm run local` use serverless offline to test locally.
 
 ### Deploy on AWS, simply run:
 
@@ -111,3 +99,11 @@ curl https://xxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/books
 ## Scaling
 
 By default, AWS Lambda limits the total concurrent executions across all functions within a given region to 100. The default limit is a safety limit that protects you from costs due to potential runaway or recursive functions during initial development and testing. To increase this limit above the default, follow the steps in [To request a limit increase for concurrent executions](http://docs.aws.amazon.com/lambda/latest/dg/concurrent-executions.html#increase-concurrent-executions-limit).
+
+### Info
+
+For your Continuous Integration you can simply do:
+
+```bash
+jest --ci --reporters=default --reporters=jest-junit
+```
