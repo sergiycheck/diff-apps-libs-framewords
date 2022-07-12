@@ -4,14 +4,14 @@ enum StatusCode {
   success = 200,
 }
 
-class Result {
-  private statusCode: number;
+export class Result {
+  public statusCode: number;
 
-  private code: number;
+  public code: number;
 
-  private message: string;
+  public message: string;
 
-  private data?: any;
+  public data?: any;
 
   constructor(statusCode: number, code: number, message: string, data?: any) {
     this.statusCode = statusCode;

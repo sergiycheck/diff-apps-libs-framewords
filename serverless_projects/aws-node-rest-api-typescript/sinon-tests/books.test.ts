@@ -1,9 +1,9 @@
 import lambdaTester from 'lambda-tester';
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { findOne, find, create, update, deleteOne } from '../../app/handler';
-import * as booksMock from './books.mock';
-import { Books as BooksModel } from '../../app/model/books';
+import { findOne, find, create, update, deleteOne } from '../app/handler';
+import * as booksMock from '../mocks/books.mock';
+import { Books as BooksModel } from '../app/model/books';
 
 describe('FindOne [GET]', () => {
   it('success', () => {

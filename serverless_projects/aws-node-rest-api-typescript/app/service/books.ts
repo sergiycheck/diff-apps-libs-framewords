@@ -1,6 +1,7 @@
 import { Model } from 'mongoose';
 import { Book } from '../model';
 import { CreateBookDTO, UpdateBookDTO } from '../model/dto/dtos.dto';
+import { ResponseBook } from '../model/vo/responseVo';
 
 class BooksService {
   private books: Model<Book>;
@@ -9,7 +10,7 @@ class BooksService {
     this.books = books;
   }
 
-  protected async createBook(params: CreateBookDTO): Promise<object> {
+  public async createBook(params: CreateBookDTO): Promise<object> {
     try {
       const result = await this.books.create({
         name: params.name,
@@ -24,24 +25,22 @@ class BooksService {
     }
   }
 
-  protected updateBooks(id: number, data: UpdateBookDTO) {
-    return this.books.findOneAndUpdate(
-      { id },
-      { ...data },
-      { runValidators: true, new: true }
-    );
+  public async updateBooks(id: number, data: UpdateBookDTO) {
+    return (await this.books
+      .findOneAndUpdate({ id }, { ...data }, { runValidators: true, new: true })
+      .lean()) as unknown as ResponseBook;
   }
 
-  protected findBooks() {
-    return this.books.find({});
+  public async findBooks() {
+    return (await this.books.find({})) as unknown as ResponseBook[];
   }
 
-  protected findOneBookById(id: number) {
-    return this.books.findOne({ id });
+  public async findOneBookById(id: number) {
+    return (await this.books.findOne({ id })) as unknown as ResponseBook;
   }
 
-  protected deleteOneBookById(id: number) {
-    return this.books.deleteOne({ id });
+  public async deleteOneBookById(id: number) {
+    return (await this.books.deleteOne({ id })) as any;
   }
 }
 

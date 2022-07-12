@@ -11,3 +11,12 @@ export class ResponseVO {
 
   body: string;
 }
+
+export class ResponseBook {
+  _id: string;
+  name: string;
+  id: number;
+  createdAt: string;
+  __v: number;
+  description: string;
+}
