@@ -1,0 +1,27 @@
+{
+  "name": "typedi_learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf build",
+    "build": "npm run tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "node_modules/typescript/bin/tsc",
+    "exec": "ts-node ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "typedi": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "ts-node": "^10.8.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}
